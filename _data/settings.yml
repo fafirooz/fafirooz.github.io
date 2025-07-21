@@ -1,6 +1,6 @@
 basic_settings:
-  site_title: Index
-  site_tagline: A minimal, fixed sidebar grid portfolio Jekyll theme.
+  site_title: Segoosheh
+  site_tagline: An Architect Company.
   favicon_image: /images/favicon.png
 
 header_settings:
@@ -11,8 +11,16 @@ menu_settings:
   menu_items:
     - title: 'Projects'
       url: '/'
+      children:
+        - title: "Design"
+          url: "/design"
+        - title: "Development"
+          url: "/development"
     - title: 'Blog'
       url: '/blog/'
+      children:
+        - title: "blog1"
+          url: "/design"
     - title: 'About'
       url: '/about'
     - title: 'Contact'
@@ -92,6 +100,12 @@ font_settings:
     small_size: 30
     medium_size: 15
     large_size: 16
+    weight: 500
+    letter_spacing: 0
+  sub_menu:
+    small_size: 15
+    medium_size: 15
+    large_size: 21
     weight: 500
     letter_spacing: 0
   grid_item_title:

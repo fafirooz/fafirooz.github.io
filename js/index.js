@@ -354,11 +354,24 @@
 		}
 	});
 
-	$(document).on('click', '.menu__list__item__link', function (){
+	$(document).on('click', '.menu__list__item__link', function (e){
+
+		const $item = $(this).closest('.menu__list__item');
+		const hasChildren = $item.hasClass('has-children');
 
 		// If menu is open when you click a link on mobile
 		if ( $('.menu').hasClass('menu--open') ) {
 			$('.menu').removeClass('menu--open');
+		}
+
+		if (hasChildren) {
+			e.preventDefault(); // Don't navigate
+
+			// Close all other open submenus
+			$('.menu__list__item.open').not($item).removeClass('open');
+
+			// Toggle current submenu
+			$item.toggleClass('open');
 		}
 	});
 

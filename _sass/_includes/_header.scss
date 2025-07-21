@@ -273,6 +273,51 @@
 }
 
 
+// Submenu
+.menu__list__submenu__link {
+	font-size: $sub-menu-small;
+	font-weight: $sub-menu-weight;
+	color: $text-dark-color;
+	padding: 10px 0;
+
+	&:hover {
+		color: $overlay-accent-color;
+	}
+
+	/*@include mq(tabletl) {
+		padding: 0;
+		font-size: $sub-menu-medium;
+		color: $text-dark-color;
+
+		&:hover {
+			color: $accent-color;
+		}
+	}*/
+
+	/*@include mq(laptop) {
+		font-size: $sub-menu-large;
+	}*/
+
+	&.active-link {
+		color: $overlay-accent-color;
+
+		@include mq(tabletl) {
+			color: $accent-color;
+		}
+	}
+}
+
+.menu__list__submenu {
+	display: none;
+	list-style: none;
+	margin-top: 0.2rem;
+	margin-left: 1rem;
+}
+
+.menu__list__item.open > .menu__list__submenu {
+	display: block;
+}
+
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - Projects menu
 

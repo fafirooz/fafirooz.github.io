@@ -21,8 +21,21 @@
 			<div class="menu__wrap">
 				<ul class="menu__list">
 					{% for item in site.data.settings.menu_settings.menu_items %}
-					<li class="menu__list__item">
-						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">{{ item.title }}</a>
+					<li class="menu__list__item{% if item.children %} has-children{% endif %}">
+						<a href="{{ item.url | relative_url }}" class="menu__list__item__link">
+							{{ item.title }}
+						</a>
+						{% if item.children %}
+						<ul class="menu__list__submenu">
+							{% for child in item.children %}
+							<li class="menu__list__submenu__item">
+								<a href="{{ child.url | relative_url }}" class="menu__list__submenu__link">
+									{{ child.title }}
+								</a>
+							</li>
+							{% endfor %}
+						</ul>
+						{% endif %}
 					</li>
 					{% endfor %}
 				</ul>
