@@ -364,7 +364,7 @@
 			$('.menu').removeClass('menu--open');
 		}
 
-		if (hasChildren) {
+		if (hasChildren && !$(e.target).hasClass('js-no-submenu-toggle')) {
 			e.preventDefault(); // Don't navigate
 
 			// Close all other open submenus

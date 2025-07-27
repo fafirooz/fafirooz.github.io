@@ -29,7 +29,7 @@
 						<ul class="menu__list__submenu">
 							{% for child in item.children %}
 							<li class="menu__list__submenu__item">
-								<a href="{{ child.url | relative_url }}" class="menu__list__submenu__link">
+								<a href="{{ child.url | relative_url }}" class="menu__list__submenu__link js-no-submenu-toggle">
 									{{ child.title }}
 								</a>
 							</li>
