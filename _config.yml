@@ -13,9 +13,30 @@ collections:
   projects:
     output: true
     permalink: /project/:slug
-  designs:
+  commercial-buildings:
     output: true
-    permalink: /design/:slug
+    permalink: /commercial-building/:slug
+  concept-designs:
+    output: true
+    permalink: /concept-design/:slug
+  hotels:
+    output: true
+    permalink: /hotel/:slug
+  industrial-buildings:
+    output: true
+    permalink: /industrial-building/:slug
+  interior-designs:
+    output: true
+    permalink: /interior-design/:slug
+  office-buildings:
+    output: true
+    permalink: /office-building/:slug
+  residential-buildings:
+    output: true
+    permalink: /residential-building/:slug
+  villas:
+    output: true
+    permalink: /villa/:slug
 
 defaults:
   -
@@ -44,9 +65,51 @@ defaults:
   -
     scope:
       path: ""
-      type: "designs"
+      type: "commercial-buildings"
     values:
-      layout: "design"
+      layout: "commercial-building"
+  -
+    scope:
+      path: ""
+      type: "concept-designs"
+    values:
+      layout: "concept-design"
+  -
+    scope:
+      path: ""
+      type: "hotels"
+    values:
+      layout: "hotel"
+  -
+    scope:
+      path: ""
+      type: "industrial-buildings"
+    values:
+      layout: "industrial-building"
+  -
+    scope:
+      path: ""
+      type: "interior-designs"
+    values:
+      layout: "interior-design"
+  -
+    scope:
+      path: ""
+      type: "Office Buildings"
+    values:
+      layout: "office-building"
+  -
+    scope:
+      path: ""
+      type: "Residential Buildings"
+    values:
+      layout: "residential-building"
+  -
+    scope:
+      path: ""
+      type: "Villas"
+    values:
+      layout: "villa"
 
 markdown: kramdown
 

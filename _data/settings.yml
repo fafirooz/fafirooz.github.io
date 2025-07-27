@@ -12,10 +12,22 @@ menu_settings:
     - title: 'Projects'
       url: '/'
       children:
-        - title: "Design"
-          url: "/design"
-        - title: "Development"
-          url: "/development"
+        - title: "Commercial Buildings"
+          url: "/commercial-building"
+        - title: "Concept Designs"
+          url: "/concept-design"
+        - title: "Hotels"
+          url: "/hotel"
+        - title: "Industrial Buildings"
+          url: "/industrial-building"
+        - title: "Interior Designs"
+          url: "/interior-design"
+        - title: "Office Buildings"
+          url: "/office-building"
+        - title: "Residential-Buildings"
+          url: "/residential-building"
+        - title: "Villas"
+          url: "/villa"
     - title: 'Blog'
       url: '/blog/'
       children:
