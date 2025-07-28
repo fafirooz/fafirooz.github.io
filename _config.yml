@@ -15,28 +15,28 @@ collections:
     permalink: /project/:slug
   commercial-buildings:
     output: true
-    permalink: /commercial-building/:slug
+    permalink: /projects/commercial-building/:slug
   concept-designs:
     output: true
-    permalink: /concept-design/:slug
+    permalink: /projects/concept-design/:slug
   hotels:
     output: true
-    permalink: /hotel/:slug
+    permalink: /projects/hotel/:slug
   industrial-buildings:
     output: true
-    permalink: /industrial-building/:slug
+    permalink: /projects/industrial-building/:slug
   interior-designs:
     output: true
-    permalink: /interior-design/:slug
+    permalink: /projects/interior-design/:slug
   office-buildings:
     output: true
-    permalink: /office-building/:slug
+    permalink: /projects/office-building/:slug
   residential-buildings:
     output: true
-    permalink: /residential-building/:slug
+    permalink: /projects/residential-building/:slug
   villas:
     output: true
-    permalink: /villa/:slug
+    permalink: /projects/villa/:slug
 
 defaults:
   -
@@ -64,49 +64,49 @@ defaults:
       layout: "project"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "commercial-buildings"
     values:
       layout: "commercial-building"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "concept-designs"
     values:
       layout: "concept-design"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "hotels"
     values:
       layout: "hotel"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "industrial-buildings"
     values:
       layout: "industrial-building"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "interior-designs"
     values:
       layout: "interior-design"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "Office Buildings"
     values:
       layout: "office-building"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "Residential Buildings"
     values:
       layout: "residential-building"
   -
     scope:
-      path: ""
+      path: "/projects/"
       type: "Villas"
     values:
       layout: "villa"

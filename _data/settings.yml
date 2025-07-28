@@ -1,11 +1,11 @@
 basic_settings:
   site_title: Segoosheh
-  site_tagline: An Architect Company.
-  favicon_image: /images/favicon.png
+  site_tagline: Segoosheh Architecture
+  favicon_image: /images/segoosheh.jpg
 
 header_settings:
-  logo_image: 
-  logo_width: 200
+  logo_image: /images/segoosheh.jpg
+  logo_width: 80
 
 menu_settings:
   menu_items:
@@ -13,21 +13,21 @@ menu_settings:
       url: '/'
       children:
         - title: "Commercial Buildings"
-          url: "/commercial-building"
+          url: "/projects/commercial-buildings"
         - title: "Concept Designs"
-          url: "/concept-design"
+          url: "/projects/concept-designs"
         - title: "Hotels"
-          url: "/hotel"
+          url: "/projects/hotels"
         - title: "Industrial Buildings"
-          url: "/industrial-building"
+          url: "/projects/industrial-buildings"
         - title: "Interior Designs"
-          url: "/interior-design"
+          url: "/projects/interior-designs"
         - title: "Office Buildings"
-          url: "/office-building"
-        - title: "Residential-Buildings"
-          url: "/residential-building"
+          url: "/projects/office-buildings"
+        - title: "Residential Buildings"
+          url: "/projects/residential-buildings"
         - title: "Villas"
-          url: "/villa"
+          url: "/projects/villas"
     - title: 'Blog'
       url: '/blog/'
       children:
