@@ -39,7 +39,7 @@ menu_settings:
       children:
         - title: "blog1"
           url: "/design"
-    - title: 'About'
+    - title: 'About Us'
       url: '/about'
     - title: 'Contact'
       url: '/contact'
