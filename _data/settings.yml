@@ -28,6 +28,12 @@ menu_settings:
           url: "/projects/residential-buildings"
         - title: "Villas"
           url: "/projects/villas"
+    - title: 'Graphic Design'
+      url: '/projects/graphic-designs'
+    - title: 'Product Design'
+      url: '/projects/product-designs'
+    - title: 'Competition'
+      url: '/projects/competitions'
     - title: 'Blog'
       url: '/blog/'
       children:

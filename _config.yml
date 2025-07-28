@@ -1,4 +1,4 @@
-site: Index Jekyll Theme
+site: SeGoosheh
 
 url: https://index.jekyllthemes.io
 baseurl:
@@ -37,6 +37,15 @@ collections:
   villas:
     output: true
     permalink: /projects/villa/:slug
+  graphic-designs:
+    output: true
+    permalink: /projects/graphic-design/:slug
+  product-designs:
+    output: true
+    permalink: /projects/product-design/:slug
+  competitions:
+    output: true
+    permalink: /projects/competition/:slug
 
 defaults:
   -
@@ -110,6 +119,24 @@ defaults:
       type: "Villas"
     values:
       layout: "villa"
+  -
+    scope:
+      path: "/projects/"
+      type: "Graphic Designs"
+    values:
+      layout: "graphic-design"
+  -
+    scope:
+      path: "/projects/"
+      type: "Product Designs"
+    values:
+      layout: "product-design"
+  - scope:
+      path: "/projects/"
+      type: "Competitions"
+    values:
+      layout: "competition"
+
 
 markdown: kramdown
 
